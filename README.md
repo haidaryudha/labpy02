@@ -72,12 +72,95 @@ Sebagai contoh, jika harga tiket adalah Rp50.000 dan pengguna berhak atas diskon
 
 
 ### Menampilkan hasil
+![Screenshot 2024-10-27 221148](https://github.com/user-attachments/assets/cb6bcf90-51b7-4c33-9071-4dad6bf6a620)
+
+#Menampilkan total biaya jika tiket valid
+if total_tiket > 0:
+    print(f"Jumlah yang harus dibayar: Rp{jumlah_bayar:.0f}")
+
+Penjelasan:
+
+### Menampilkan Hasil:
+
+Program memeriksa apakah total_tiket lebih dari 0 untuk memastikan bahwa tiket yang valid telah dipilih.
+
+Jika valid, program mencetak jumlah yang harus dibayar. Format output menggunakan f-string untuk menyajikan total dalam format yang rapi, tanpa desimal, menggunakan {jumlah_bayar:.0f}.
+
+
+## FlowChart
+![ss17](https://github.com/user-attachments/assets/a2ac0a5d-0e50-40e8-8044-59f01b1741ad)
 
 
 
+## KALKULATOR SEDERHANA
+
+
+![Screenshot 2024-10-27 231053](https://github.com/user-attachments/assets/3912ceac-f730-469f-a81b-6f6a1cf6d8d5)
+### 1. Input Angka Pertama
+
+Baris: angka1 = float(input("Masukkan angka pertama: "))
+
+Fungsi:
+
+input("Masukkan angka pertama: "): Menampilkan pesan kepada pengguna untuk memasukkan angka pertama. Fungsi ini menunggu hingga pengguna mengetikkan input dan menekan Enter.
+
+float(...): Mengonversi input yang diterima (yang merupakan string) menjadi tipe data float. Ini memungkinkan pengguna untuk memasukkan angka desimal.
+
+angka1: Variabel ini menyimpan nilai angka pertama yang dimasukkan oleh pengguna.
 
 
 
+### 2. Input Angka Kedua
+
+Baris: angka2 = float(input("Masukkan angka kedua: "))
+
+Fungsi:
+
+Proses ini mirip dengan langkah sebelumnya. Pengguna diminta untuk memasukkan angka kedua.
+
+angka2: Variabel ini menyimpan nilai angka kedua yang dimasukkan.
+
+
+
+### 3. Input Operator
+
+Baris: operator_input = input("Masukkan operator (+, -, *, /): ").strip()
+
+Fungsi:
+
+input("Masukkan operator (+, -, *, /): "): Menampilkan pesan untuk meminta pengguna memilih salah satu operator aritmatika (penjumlahan, pengurangan, perkalian, atau pembagian).
+
+.strip(): Menghapus spasi di awal dan akhir string yang dimasukkan oleh pengguna. Ini berguna untuk memastikan bahwa hanya karakter penting yang tersisa untuk pemrosesan lebih lanjut.
+
+operator_input: Variabel ini menyimpan operator yang dimasukkan oleh pengguna.
+
+
+## Menghitung Hasil Berdasarkan Operator
+![Screenshot 2024-10-27 231126](https://github.com/user-attachments/assets/522ae3da-5fea-46da-a145-7544e9b15714)
+
+
+### Bagian kode ini bertugas untuk menentukan operasi aritmatika berdasarkan input operator dari pengguna.
+
+Pertama, program memeriksa apakah operator adalah penjumlahan (+). Jika benar, hasil penjumlahan dari angka1 dan angka2 disimpan dalam variabel hasil.
+Jika operator adalah pengurangan (-), program melakukan pengurangan dan menyimpan hasilnya.
+Untuk perkalian (*), program melakukan operasi perkalian dan menyimpan hasilnya di variabel yang sama.
+Ketika operator adalah pembagian (/), program memeriksa apakah angka2 bukan nol. Jika tidak nol, program melakukan pembagian; jika nol, program menyimpan pesan kesalahan tentang pembagian dengan nol.
+Jika operator yang dimasukkan tidak valid (bukan salah satu dari empat operator aritmatika), program menyimpan pesan kesalahan yang sesuai.
+Tujuan dari kode ini adalah untuk melakukan operasi yang tepat dan memberikan umpan balik jika terjadi kesalahan, seperti pembagian dengan nol atau penggunaan operator yang tidak valid.
+
+## Menampilkan Hasil
+![Screenshot 2024-10-27 231153](https://github.com/user-attachments/assets/db0dd605-1e41-4408-859f-c8c0e13cf3a5)
+
+### Tujuan: Menampilkan hasil perhitungan kepada pengguna.
+
+### Proses:
+Menggunakan print() untuk menampilkan hasil.
+Memanfaatkan f-string (f"Hasil: {hasil}") untuk format yang lebih bersih dan jelas.
+
+
+## FLOWCHART
+
+![FLOWCHART 2](https://github.com/user-attachments/assets/6c4fa9ab-5fa0-4c20-bec1-6b1e2c4193c4)
 
 
 
